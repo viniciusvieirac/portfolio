@@ -1,3 +1,5 @@
+import Carousel from "@/components/carousel";
+import { ImageL } from "@/types/Image";
 import { User } from "@/types/User";
 import Image from "next/image";
 import { useEffect, useState } from "react";
@@ -12,6 +14,34 @@ export default function Home() {
         setMyUser(data);
       });
   }, []);
+
+  const randomImages: ImageL[] = [
+  {
+    id: "1",
+    src: "https://avatars.githubusercontent.com/u/118015999?v=4",
+    alt: "Image 1",
+  },
+  {
+    id: "2",
+    src: "https://avatars.githubusercontent.com/u/118015999?v=4",
+    alt: "Image 2",
+  },
+  {
+    id: "3",
+    src: "https://avatars.githubusercontent.com/u/118015999?v=4",
+    alt: "Image 3",
+  },
+  {
+    id: "4",
+    src: "https://avatars.githubusercontent.com/u/118015999?v=4",
+    alt: "Image 4",
+  },
+  {
+    id: "5",
+    src: "https://avatars.githubusercontent.com/u/118015999?v=4",
+    alt: "Image 5",
+  },
+];
 
   return (
     <div>
@@ -136,10 +166,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section>
-        <div className="text-center">
-          <h1 className="text-zinc-600 font-bold text-4xl">Projects</h1>
-        </div>
+      <section className="">
+        <h1 className="text-center font-bold text-4xl mt-8">Projects</h1>
+         <Carousel images={randomImages} />
       </section>
     </div>
   );

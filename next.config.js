@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['sangw.in', 'localhost', 'avatars.githubusercontent.com'] // <== Domain name
+    domains: ['sangw.in', 'localhost', 'avatars.githubusercontent.com', 'via.placeholder.com']
   }
 }
 
