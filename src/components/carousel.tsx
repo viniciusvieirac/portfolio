@@ -1,5 +1,5 @@
 import React from "react";
-import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
+import { AiOutlineLeft, AiOutlineRight, AiFillGithub } from "react-icons/ai";
 import Swipe from "react-easy-swipe";
 import Image from "next/image";
 import { CarouselProps } from "@/types/Image";
@@ -31,16 +31,37 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
         >
           {images.map((image, index) =>
             index === currentSlide ? (
-              <div className="flex items-center justify-center w-full h-full" key={image.id}>
-                <Image
-                  src={image.src}
-                  width={300}
-                  height={300}
-                  alt={image.alt}
-                  layout="intrinsic"
-                  objectFit="contain"
-                  className="animate-fadeIn"
-                />
+              <div
+                className="flex flex-col items-center justify-center w-full h-full"
+                key={image.id}
+              >
+                <div className="relative group">
+                  <Image
+                    src={image.src}
+                    width={300}
+                    height={300}
+                    alt={image.alt}
+                    layout="intrinsic"
+                    objectFit="contain"
+                    className="animate-fadeIn"
+                  />
+                  <div className="absolute bottom-0 right-0 p-2 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                    <button className="text-gray-400 hover:text-gray-600 rounded-full bg-white p-3">
+                      <a
+                        href={image.repo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <AiFillGithub size={80} />
+                      </a>
+                    </button>
+                  </div>
+                </div>
+
+                <div className="flex flex-col items-center mt-6 max-w-4xl">
+                  <h2>{image.name}</h2>
+                  <p className="mt-4">{image.description}</p>
+                </div>
               </div>
             ) : null
           )}

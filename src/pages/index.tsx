@@ -18,28 +18,43 @@ export default function Home() {
   const randomImages: ImageL[] = [
   {
     id: "1",
-    src: "https://avatars.githubusercontent.com/u/118015999?v=4",
+    src: "/undraw-music.svg",
     alt: "Image 1",
+    name: 'Song Tunes',
+    description: 'This is an application that simulates a music streaming service, like Spotify. Being able to search for songs, favorite them, etc.',
+    repo: 'https://github.com/viniciusvieirac/song-tunes'
   },
   {
     id: "2",
-    src: "https://avatars.githubusercontent.com/u/118015999?v=4",
+    src: "/todo-list.svg",
     alt: "Image 2",
+    name: 'ToDo List',
+    description: 'Esse projeto consiste em uma lista de tarefas que um indivíduo precisa concluir ou realizar.',
+    repo: 'https://github.com/viniciusvieirac/todo-list',
   },
   {
     id: "3",
-    src: "https://avatars.githubusercontent.com/u/118015999?v=4",
+    src: "/recipes.svg",
     alt: "Image 3",
+    name: 'Recipes App',
+    description: 'Esse projeto consiste no desenvolvimento de um aplicativo de receitas que utiliza uma API de comidas e bebidas para fornecer aos usuários uma ampla variedade de receitas para explorar, preparar e desfrutar. O aplicativo incluirá recursos como sistema de login, busca por receitas específicas, exibição de ingredientes, início e conclusão de receitas, salvamento de receitas finalizadas e opção de favoritar receitas de comidas e bebidas.',
+    repo: 'https://github.com/viniciusvieirac/recipes-app',
   },
   {
     id: "4",
-    src: "https://avatars.githubusercontent.com/u/118015999?v=4",
+    src: "/shopping.svg",
     alt: "Image 4",
+    name: 'Shopping Cart',
+    description: 'Esse projeto consiste no desenvolvimento de uma loja online que utiliza a API do Mercado Livre como fonte de dados para exibir produtos aos usuários. A loja é uma plataforma completa de comércio eletrônico, com recursos como filtros por categoria, pesquisa por produto, páginas individuais para cada produto, carrinho de compras e finalização de compra.',
+    repo: 'https://github.com/viniciusvieirac/frontend-online-store',
   },
   {
     id: "5",
-    src: "https://avatars.githubusercontent.com/u/118015999?v=4",
+    src: "/solar-system.svg",
     alt: "Image 5",
+    name: 'Solar System',
+    description: 'Este projeto mostra algumas viagens espaciais já realizadas.',
+    repo: 'https://github.com/viniciusvieirac/solar-system',
   },
 ];
 
@@ -78,10 +93,7 @@ export default function Home() {
           <Image src="/exp.svg" alt="exp" width={660} height={550} />
         </div>
         <div>
-          Estudante da Origamid, desenvolvo pequenos projetos como o Bikcraft
-          utilizando apenas HTML, CSS e JavaScript. Agregando a tudo isso,
-          possuo conhecimento também sobre UX e UI design, conhecimento este que
-          me permite criar projetos autênticos e com fundamento.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc blandit massa non commodo ultricies. Vivamus condimentum nisl auctor turpis vulputate tincidunt ut eu ipsum. Sed sit amet vulputate nibh, ut aliquet justo. Nam vitae scelerisque nunc, sit amet.
         </div>
       </section>
       <section
