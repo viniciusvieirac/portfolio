@@ -70,9 +70,9 @@ export default function Home() {
           <header className="flex justify-between items-center max-w-4xl mx-auto mt-8">
             <h1 className="font-bold text-4xl">{myUser.name}</h1>
             <div className="flex space-x-8 font-normal">
-              <a href="">Skills</a>
-              <a href="">Projetos</a>
-              <a href="">Contato</a>
+              <a href="#skills">Skills</a>
+              <a href="#projects">Projetos</a>
+              <a href="#contact">Contato</a>
             </div>
           </header>
           <section className="flex items-center gap-40 max-w-4xl mx-auto mt-28">
@@ -105,6 +105,7 @@ export default function Home() {
         </div>
       </section>
       <section
+        id="skills"
         className="bg-black flex items-center justify-center"
         style={{ height: "50vh" }}
       >
@@ -156,40 +157,41 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="">
+      <section id="projects">
         <h1 className="text-center font-bold text-4xl mt-8">Projects</h1>
         <Carousel images={randomImages} />
       </section>
       <form
-  action=""
-  className="bg-black flex justify-center items-center relative"
-  style={{ height: "60vh" }}
->
-  <div className="flex flex-col items-center" style={{ width: "100%" }}>
-    <h1 className="text-zinc-600 font-bold text-4xl">Entre em contato</h1>
-    <input
-      type="text"
-      className="border w-80 border-gray-300 rounded-md p-3 bg-transparent text-white mt-4 focus:outline-none focus:border-zinc-600"
-      placeholder="Nome"
-    />
-    <input
-      type="email"
-      className="border w-80 border-gray-300 rounded-md p-3 bg-transparent text-white mt-4 focus:outline-none focus:border-zinc-600"
-      placeholder="E-mail"
-    />
-    <textarea
-      className="border w-80 border-gray-300 rounded-md p-3 bg-transparent text-white mt-4 focus:outline-none focus:border-zinc-600"
-      rows={5}
-      placeholder="Sua mensagem"
-      name=""
-      id=""
-    ></textarea>
-  </div>
-</form>
+        id="contact"
+        action=""
+        className="bg-black flex justify-center items-center relative"
+        style={{ height: "60vh" }}
+      >
+        <div className="flex flex-col items-center" style={{ width: "100%" }}>
+          <h1 className="text-zinc-600 font-bold text-4xl">Entre em contato</h1>
+          <input
+            type="text"
+            className="border w-80 border-gray-300 rounded-md p-3 bg-transparent text-white mt-4 focus:outline-none focus:border-zinc-600"
+            placeholder="Nome"
+          />
+          <input
+            type="email"
+            className="border w-80 border-gray-300 rounded-md p-3 bg-transparent text-white mt-4 focus:outline-none focus:border-zinc-600"
+            placeholder="E-mail"
+          />
+          <textarea
+            className="border w-80 border-gray-300 rounded-md p-3 bg-transparent text-white mt-4 focus:outline-none focus:border-zinc-600"
+            rows={5}
+            placeholder="Sua mensagem"
+            name=""
+            id=""
+          ></textarea>
+        </div>
+      </form>
 
       <footer
         className="text-3xl text-white fixed inset-x-0 bottom-0 rounded-full bg-white p-6 flex justify-center items-center"
-    style={{ backgroundColor: "transparent" }}
+        style={{ backgroundColor: "transparent" }}
       >
         <div className="flex items-center justify-center space-x-6 h-full relative bottom-0 right-0 duration-300 group-hover:opacity-100">
           <a
