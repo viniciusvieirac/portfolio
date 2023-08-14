@@ -1,11 +1,12 @@
 import Image from "next/image";
+import "animate.css";
 
 export default function Skills() {
   return (
     <>
       <section
         id="skills"
-        className="bg-black flex items-center justify-center"
+        className="bg-black flex items-center justify-center animate__animated animate-bounce"
         style={{ height: "50vh" }}
       >
         <div className="text-center">
