@@ -1,5 +1,5 @@
 import { randomImages } from "@/utils/projetos";
-import Carousel from "./Carousel";
+import Carousel from "./Carrossel";
 
 export default function Projects() {
   return (

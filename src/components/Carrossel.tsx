@@ -4,7 +4,7 @@ import Swipe from "react-easy-swipe";
 import Image from "next/image";
 import { CarouselProps } from "@/types/Image";
 
-const Carousel: React.FC<CarouselProps> = ({ images }) => {
+const Carrossel: React.FC<CarouselProps> = ({ images }) => {
   const [currentSlide, setCurrentSlide] = React.useState<number>(0);
 
   const handleNextSlide = () => {
@@ -41,8 +41,6 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
                     width={300}
                     height={300}
                     alt={image.alt}
-                    layout="intrinsic"
-                    objectFit="contain"
                     className="animate-fadeIn"
                   />
                   <div className="absolute bottom-0 right-0 p-2 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
@@ -91,4 +89,4 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
   );
 };
 
-export default Carousel;
+export default Carrossel;
