@@ -7,7 +7,7 @@ export default function Skills() {
       <section
         id="skills"
         className="bg-black flex items-center justify-center animate__animated animate-bounce"
-        style={{ height: "50vh" }}
+        style={{ height: "65vh" }}
       >
         <div className="text-center">
           <h1 className="text-zinc-600 font-bold text-4xl">Skills</h1>
